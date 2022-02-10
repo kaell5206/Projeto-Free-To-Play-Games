@@ -1,9 +1,31 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header img {
-  width: 200px;
-  margin: 20px;
+.primary-bg {
+  background-color: rgb(34, 33, 49);
+}
+
+.card-bg {
+  background-color: rgb(77, 65, 87);
+  width: 400px;
+  height: 470px;
+  max-width: 400px;
+  max-height: 470px;
+}
+
+
+
+.icon__item {
+  margin: 0px 2px;
+  width: 15%;
+}
+
+@media screen and (max-width: 667.98px) {
+  .icon__item {
+    margin: 0px 0.6px;
+    width: 100px;
+  }
 }
