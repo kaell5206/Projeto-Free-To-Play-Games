@@ -1,6 +1,8 @@
-const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games?platform=pc'
 
-const getAPI = async () => {
+// Autorização da da API via https://rapidapi.com/digiwalls/api/free-to-play-games-database
+
+const getAPI = async (genre) => {
+  const url = `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${genre}`
   const options = {
     "method": "GET",
     "headers": {
@@ -14,5 +16,5 @@ const getAPI = async () => {
 }
 
 window.onload = async () => {
-await getAPI();
+await getAPI('MMORPG');
 }
