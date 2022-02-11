@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .primary-bg {
   background-color: rgb(34, 33, 49);
 }
@@ -16,7 +15,13 @@
   max-height: 470px;
 }
 
+.pointer {
+  cursor: pointer;
+}
 
+.icon__item p {
+  cursor: default;
+}
 
 .icon__item {
   margin: 0px 2px;
