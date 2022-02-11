@@ -70,7 +70,6 @@ const getGenre = async () => {
     data.slice(0,10).
     forEach( (item) => {
       const obj = {title: item.title, img: item.thumbnail, description: item.short_description, link: item.game_url}
-      console.log(obj);
       gameSection.appendChild(createGameCard(obj));
     })    
     })
@@ -83,7 +82,6 @@ const defaultLoad = async () => {
   dataDefaultLoad.slice(0,10).
       forEach( (item) => {
         const obj = {title: item.title, img: item.thumbnail, description: item.short_description, link: item.game_url}
-        console.log(obj);
         gameSection.appendChild(createGameCard(obj));
       })    
 }
