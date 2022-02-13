@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-
+const fetch = require('node-fetch');
 const { createGameCard, getAPI, getAPIDefault } = require("./script");
 const obj = {
   title: 'Naruto Online',
@@ -36,14 +36,7 @@ const obj2 = ({title, img, description, link}) => {
   gameLink.setAttribute('target','_blank')
   divGameBody.appendChild(gameLink);
   return divSection
-}
-const options = {
-  "method": "GET",
-  "headers": {
-    "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
-    "x-rapidapi-key": "6302383e28msh44bad1d92dea4aep1f7ba7jsn2fcbedaab64d"
-  }
-}
+};
 
 
 describe('1 - Verifica a função createGameCard', () => {
@@ -55,17 +48,11 @@ describe('1 - Verifica a função createGameCard', () => {
   })
 });
 
-/* describe('2 - Teste a função getAPI', () => {
+describe('2 - Teste a função getAPI', () => {
   it('Execute a função getAPI com o argumento do item "Shooter" e teste se fetch foi chamada', async () => {
     expect.assertions(1);
-    await getAPI("Shooter")
+    await getAPI("Shooter");
     expect(fetch).toHaveBeenCalled();
-    });
-  
-    it('Teste se, ao chamar a função getAPI com o argumento do item "shooter", a função fetch utiliza o endpoint "https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter"', async () => {
-      expect.assertions(1);
-      await getAPI('Shooter');
-      expect(fetch).toHaveBeenCalledWith('https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter');
     });
 });
 
@@ -75,12 +62,4 @@ describe('3 - Teste a função getAPIDefault', () => {
     await getAPIDefault()
     expect(fetch).toHaveBeenCalled();
     });
-  
-    it('Teste se, ao chamar a função getAPIDefault, a função fetch utiliza o endpoint "https://free-to-play-games-database.p.rapidapi.com/api/games?sort-by=popularity"', async () => {
-      expect.assertions(1);
-      await getAPIDefault();
-      expect(fetch).toHaveBeenCalledWith('https://free-to-play-games-database.p.rapidapi.com/api/games?sort-by=popularity');
-    });
 });
-
- */

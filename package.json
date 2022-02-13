@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kaell5206/Projeto-Free-To-Play-Games#readme",
   "devDependencies": {
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
   }
 }
