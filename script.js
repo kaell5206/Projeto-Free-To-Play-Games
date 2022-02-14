@@ -45,7 +45,6 @@ const createGameCard = ({title, img, description, link}) => {
   gameLink.innerHTML = 'Jogue agora!';
   const image = document.createElement('img');
   image.classList.add('card-img-top', 'w-100', 'py-1');
-
   image.src = img;
   divSection.appendChild(image);
   divSection.appendChild(divGameBody)
