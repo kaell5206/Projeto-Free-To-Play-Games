@@ -3,16 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
-.primary-bg {
-  background-color: rgb(34, 33, 49);
+.divisor {
+  padding: 3.5rem;
 }
-
+nav {
+  z-index: 9999;
+}
 .card-bg {
   background-color: rgb(77, 65, 87);
   width: 400px;
   height: 600px;
   max-width: 400px;
   max-height: 600px;
+}
+.bgText {
+  background-color: #ce9aff94;
+}
+.title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3.4rem;
+}
+
+.background-nav {
+  background-color: #10002B;
+}
+
+.contLogo {
+  padding: 10px 100px;
+}
+
+#options {
+  background-color: #6b4394;
+}
+body {
+  background-color: #2e104d;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  background-color: #240e38;
+}
+
+.icon-bg {
+  background-color: #1a092983;
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(0, 0, 0, 0.534);
 }
 
 .pointer {
@@ -32,6 +68,22 @@
   .icon__item {
     margin: 0px 0.6px;
     width: 100px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .game-body {
+    max-width: 100%;
+  }
+
+  .contLogo {
+    padding: 0px 20px
+  }
+
+  .divisor {
+    padding: 2rem;
   }
 }
 
