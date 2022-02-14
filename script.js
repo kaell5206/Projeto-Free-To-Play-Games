@@ -67,9 +67,11 @@ const getGenre = async () => {
     const data = await getAPI(event.target.parentNode.id);
     gameSection.innerHTML = '';
     popular.innerText = event.target.parentNode.id.toUpperCase();
-    data.slice(0,10).
+    data.slice(0,12).
     forEach( (item) => {
       const obj = {title: item.title, img: item.thumbnail, description: item.short_description, link: item.game_url}
+      console.log(obj);
+      console.log(data)
       gameSection.appendChild(createGameCard(obj));
     })    
     })
@@ -79,7 +81,7 @@ const getGenre = async () => {
 const defaultLoad = async () => {
 
   const dataDefaultLoad = await getAPIDefault();
-  dataDefaultLoad.slice(0,10).
+  dataDefaultLoad.slice(0,12).
       forEach( (item) => {
         const obj = {title: item.title, img: item.thumbnail, description: item.short_description, link: item.game_url}
         gameSection.appendChild(createGameCard(obj));
