@@ -1,0 +1,26 @@
+{
+  "name": "projeto-free-to-play-games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaell5206/Projeto-Free-To-Play-Games.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaell5206/Projeto-Free-To-Play-Games/issues"
+  },
+  "homepage": "https://github.com/kaell5206/Projeto-Free-To-Play-Games#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}

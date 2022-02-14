@@ -74,7 +74,7 @@ const getGenre = async () => {
       gameSection.appendChild(createGameCard(obj));
     })    
     })
-  })  
+  });
 }
 
 const defaultLoad = async () => {
@@ -92,3 +92,10 @@ await defaultLoad()
 await getGenre();
 
 }
+
+module.exports = {
+  createGameCard, 
+  getAPI,
+  getAPIDefault,
+  getGenre,
+};
